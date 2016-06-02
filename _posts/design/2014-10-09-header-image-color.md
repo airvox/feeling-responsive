@@ -21,7 +21,7 @@ It's so easy to do. Just define in front matter an image and a background color.
 
 ## Front Matter Code
 
-{% include alert alert="WARNING: To make this work the value of `background-color` must be inbetween quotes." %}
+{% include alert.html alert="WARNING: To make this work the value of `background-color` must be inbetween quotes." %}
 
 ~~~
 header:
@@ -35,4 +35,4 @@ header:
 ### All Header-Styles 
 {: .t60 }
 
-{% include list-posts tag='header' %}
+{% include list-posts.html tag='header' %}

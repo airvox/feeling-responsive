@@ -32,4 +32,4 @@ meta_description:
 permalink:
 ---
 
-{% include gallery %}
+{% include gallery.html %}

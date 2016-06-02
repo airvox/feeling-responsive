@@ -33,4 +33,4 @@ header:
 ### All Header-Styles 
 {: .t60 }
 
-{% include list-posts tag='header' %}
+{% include list-posts.html tag='header' %}

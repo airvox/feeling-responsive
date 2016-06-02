@@ -86,7 +86,7 @@ permalink: "/changelog/"
 :   Optimized code, tweaked CSS, added images, deleted `header: "no"` from front matter (because it not necessary), added drafts to the new `_drafts`-folder to begin posts and pages faster and enhanced the documentation. Huh, 1.0 I am coming.
 
 2014-09-16 // Version 0.8
-:   Added [video post format][5] for that cinematic flavor. Added URL- and Credit-feature to images and revamped the homepage a little bit to give blog-content more exposure. Optimized some includes, especially the `_include/list-posts.html`-Include which support some nifty parameters.
+:   Added [video post format][5] for that cinematic flavor. Added URL- and Credit-feature to images and revamped the homepage a little bit to give blog-content more exposure. Optimized some includes, especially the `_include/list-posts.html.html`-Include which support some nifty parameters.
 
 2014-09-15 // Version 0.7
 :   Added an [example of a gallery][4] to show how to use Clearing Lightbox. Meta information is used in posts via `/include/meta_information`. To optimize pages/posts for search engines you have now have an extra front matter-variable called `meta_description`. Also the theme supports facebook open graph information.

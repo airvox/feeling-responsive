@@ -216,9 +216,9 @@ breadcrumb: true
 
 Includes can be very helpful to spice up your content. You can use includes in your Markdown-files with ease: Just call them with some Liquid code.
 
-### list-posts.html
+### list-posts.html.html
 
-The `list-posts.html`-include is a loop to list posts. It's a helper to add some additional content fast and easy. You can use it in individual posts for example. Which parameters you use, depends on you.
+The `list-posts.html.html`-include is a loop to list posts. It's a helper to add some additional content fast and easy. You can use it in individual posts for example. Which parameters you use, depends on you.
 
 Possible parameter for the loop:
 
@@ -229,7 +229,7 @@ Possible parameter for the loop:
 The loop looks like this when you use all parameters. Single parameters are possible of course.
 
 ~~~
-{% raw %}{% include list-posts entries='3' offset='1' category='design' %}{% endraw %}
+{% raw %}{% include list-posts.html entries='3' offset='1' category='design' %}{% endraw %}
 ~~~
 
 ### next-previous-post-in-category.html
@@ -237,7 +237,7 @@ The loop looks like this when you use all parameters. Single parameters are poss
 This include creates a next/previous link to a post of the same category using the first categories-variable in front matter.
 
 ~~~
-{% raw %} {% include next-previous-post-in-category %}{% endraw %}
+{% raw %} {% include next-previous-post-in-category.html %}{% endraw %}
 ~~~
 
 
@@ -264,28 +264,28 @@ This include lets you loop through a collection to list all entries in that coll
 This include lets you easily display an alert. To use the include no `.html` ending is necessary. You can use five different kinds of alerts: `warning`, `info`, `success`, `alert` and `text`. 
 
 ~~~
-{% raw %}{% include alert warning='This is a warning.' %}
-{% include alert info='An info box.' %}
-{% include alert success='Yeah, you made it!' %}
-{% include alert alert='Danger!' %}
-{% include alert terminal='jekyll -serve' %}
-{% include alert text='Just a note!' %}{% endraw %}
+{% raw %}{% include alert.html warning='This is a warning.' %}
+{% include alert.html info='An info box.' %}
+{% include alert.html success='Yeah, you made it!' %}
+{% include alert.html alert='Danger!' %}
+{% include alert.html terminal='jekyll -serve' %}
+{% include alert.html text='Just a note!' %}{% endraw %}
 ~~~
 
-{% include alert warning='This is a warning.' %}
-{% include alert info='An info box.' %}
-{% include alert success='Yeah, you made it!' %}
-{% include alert alert='Danger!' %}
-{% include alert terminal='jekyll -serve' %}
-{% include alert text='Just a note!' %}
+{% include alert.html warning='This is a warning.' %}
+{% include alert.html info='An info box.' %}
+{% include alert.html success='Yeah, you made it!' %}
+{% include alert.html alert='Danger!' %}
+{% include alert.html terminal='jekyll -serve' %}
+{% include alert.html text='Just a note!' %}
 
 You can even use `<html>`-tags inside the alert. Beware: Use " and ' properly.
 
 ~~~
-{% raw %}{% include alert info='<em>Feeling Responsive</em> is listed on <a href="http://jekyllthemes.org/">http://jekyllthemes.org</a>' %}{% endraw %}
+{% raw %}{% include alert.html info='<em>Feeling Responsive</em> is listed on <a href="http://jekyllthemes.org/">http://jekyllthemes.org</a>' %}{% endraw %}
 ~~~
 
-{% include alert info='<em>Feeling Responsive</em> is listed on <a href="http://jekyllthemes.org/">http://jekyllthemes.org</a>' %}
+{% include alert.html info='<em>Feeling Responsive</em> is listed on <a href="http://jekyllthemes.org/">http://jekyllthemes.org</a>' %}
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
