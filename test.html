@@ -5,10 +5,10 @@ image: /images/gallery-example-2.jpg
 
 
 <div class="img-responsive ">
-{% picture thumb "{{page.image}}" alt="picture 1" class="whatsonthumb"%}
+{% picture thumb {{page.image}} alt="picture 1" class="whatsonthumb"%}
 </div>
 <div class="img-responsive ">
-{% picture news "{{page.image}}" alt="picture 1" class="promothumb"%}
+{% picture news {{page.image}} alt="picture 1" class="promothumb"%}
 </div>
 
 
@@ -22,7 +22,7 @@ image: /images/gallery-example-2.jpg
                 <div class="dummysquare"></div>
                 <div class="img-responsive makeitsquare">
 
-                  {% picture panel "{{ attraction.image }}"" alt="" class="img-circle thumbs"%}
+                  {% picture panel {{ page.image }} alt="" class="img-circle thumbs"%}
 
                 </div>
               </div>
