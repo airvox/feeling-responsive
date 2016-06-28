@@ -1,0 +1,37 @@
+---
+layout: default
+image: /images/heros/cta_bg.jpg
+---
+
+
+<div class="img-responsive ">
+{% picture thumb "{{page.image}}" alt="picture 1" class="whatsonthumb"%}
+</div>
+<div class="img-responsive ">
+{% picture news "{{page.image}}" alt="picture 1" class="promothumb"%}
+</div>
+
+
+      <div class="attractions">
+<div class="row ">
+    {% assign sortedAttractions = site.attractions | sort: 'order' %}
+    {% for attraction in sortedAttractions limit:6 %}
+      <div class="col-md-4 col-sm-6 col-xs-12 attraction" >
+            <a href="{{ attraction.url }}">
+              <div class="squarecontainer">
+                <div class="dummysquare"></div>
+                <div class="img-responsive makeitsquare">
+
+                  {% picture panel "{{ attraction.image }}"" alt="" class="img-circle thumbs"%}
+
+                </div>
+              </div>
+              <div>
+                <h4 class="title-text">{{ attraction.title }}</h4>
+              </div>
+            </a>
+            <p class="body-text">{{ attraction.excerpt }}</p>
+      </div>
+    {% endfor %}
+</div>
+</div>
